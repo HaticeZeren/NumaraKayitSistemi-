@@ -19,5 +19,9 @@ username="root"
 password="veritabani şifresi" 
 driverClassName="com.mysql.jdbc.Driver"
 url="jdbc:mysql://localhost:3306/mydb"
-factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"/>
+factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" >
+
+Server/server.xml içerisinde yetkilendirme& kimliklendirme ayarlarını yapınız.
+<Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="realm_access" connectionPassword="realmpass" connectionURL="jdbc:mysql://localhost:3306/mydb" driverName="com.mysql.jdbc.Driver" name="login" roleNameCol="role_name" userCredCol="password" userNameCol="user_name" userRoleTable="tomcat_users_roles" userTable="tomcat_users"/>
+
 
