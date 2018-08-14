@@ -6,7 +6,8 @@ Sunucu olarak Tomcat7 kullanılmıştır.
 
 Uygulamada DAO,Facade,Singleton tasarım şablonları uygulanmış, HTML5,CSS3,Bootstrapt,Javascript kullanılmıştır.
 
-Tomcat Realm bağlantısı için Server/context.xml içerisinde 
+Tomcat Realm bağlantısı için Server/context.xml içerisinde  bağlantı bilgilerinizi kendinize göre ayarlayınız.
+
 <Resource 
 name="jdbc/myDB" 
 auth="Container"
@@ -20,4 +21,3 @@ driverClassName="com.mysql.jdbc.Driver"
 url="jdbc:mysql://localhost:3306/mydb"
 factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"/>
 
-kendinize göre ayarlayınız.
