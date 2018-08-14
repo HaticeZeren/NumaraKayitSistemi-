@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+#kutu{
+	
+	                 width:500px;  
+                     padding:30px;  
+                     background-color:#fff;  
+                     border:1px solid #ccc;  
+                     border-radius:5px;  
+                     margin-top:100px;  
+}
